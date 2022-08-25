@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  django-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: django-app
+    image: django-app
+    ports:
+      - 127.0.0.1:8000:8000
+    volumes:
+      - ./src/:/opt/app/src
+    # command: python manage.py runserver
+    tty: true
