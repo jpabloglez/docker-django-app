@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     # Local apps
     'users',
+    'analysis',
 ]
 
 MIDDLEWARE = [
